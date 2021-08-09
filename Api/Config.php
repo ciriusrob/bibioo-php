@@ -12,7 +12,7 @@ namespace Api;
 // DATABASE
 $_config['DB']                              = 'bibioo_db';
 $_config['DB_USER']                         = 'root';
-$_config['DB_PASSWORD']                     = '';
+$_config['DB_PASSWORD']                     = 'dev123';
 $_config['DB_HOST']                         = '127.0.0.1';
 
 // GENERAL

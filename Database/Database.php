@@ -9,8 +9,6 @@ namespace Database;
 
 date_default_timezone_set('Africa/Accra');
 
-require_once realpath('./') . DIRECTORY_SEPARATOR . 'Api' . DIRECTORY_SEPARATOR . 'Config.php';
-
 class Database
 {
     private $connection;
