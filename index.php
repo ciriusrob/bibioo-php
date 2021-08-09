@@ -7,6 +7,7 @@
 require_once 'Utils/Session.php';
 require_once 'Utils/Utils.php';
 require_once 'Api/Route.php';
+require_once 'Api/Config.php';
 require_once 'Database/Database.php';
 require_once 'Utils/Response.php';
 require_once 'Utils/CurlRequest.php';

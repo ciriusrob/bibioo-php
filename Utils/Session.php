@@ -7,12 +7,10 @@
 
 namespace Utils;
 
+use \Api\Config;
+
 class Session
 {
-    const AUTHORIZATION = 'authorization';
-    const USER = 'user';
-    const USER_EMAIL = 'email';
-    const ACCESS_TOKEN = 'access_token';
     private static $instance;
 
     private function __construct()
@@ -24,8 +22,8 @@ class Session
     public function start()
     {
         if ( empty( $_SESSION ) && !isset( $_SESSION ) ) {
-            session_name('_api_agalloch');
-            ini_set('session.cookie_httponly', 1);
+            session_name($_config['SESSION_NAME']);
+            ini_set('session.cookie_httponly', $_config['SESSION_COOKIE_HTTP_ONLY']);
             session_start();
         }
     }
